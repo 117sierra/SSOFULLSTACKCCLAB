@@ -26,7 +26,7 @@ docker build -t IMAGENAME . # Build Docker image for Spring Boot app
 
 ## Step 8: Run Docker Containers
 docker run -p 7000:8080 --name IMAGENAME --net springssonet -e MYSQL_HOST=MYSQLContainername -e MYSQL_USER=USERNAME -e MYSQL_PASSWORD=PASSWORD -e MYSQL_PORT=3306 springsso
-Replace MYSQLContainername, USERNAME, and PASSWORD with your MySQL container details.
+#### Replace MYSQLContainername, USERNAME, and PASSWORD with your MySQL container details.
 
 ## Note:
 - Set up SSO credentials (Secret ID and Secret Password).
