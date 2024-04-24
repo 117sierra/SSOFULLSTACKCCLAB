@@ -7,8 +7,8 @@ docker pull mysql:8.0.34 # Pull MySQL image (adjust version if needed)
 Create a new MySQL connection in MySQL Workbench CE on port 3307.
 
 #### Step 3: Run MySQL Docker Container
-docker run -p 3307:3306 --name CONTAINERNAME -e MYSQL_ROOT_PASSWORD=PASSWORD -e MYSQL_DATABASE=DATABASENAME mysql:8.0.34
-Replace CONTAINERNAME, PASSWORD, and DATABASENAME with your desired values.
+docker run -p 3307:3306 --name CONTAINERNAME -e MYSQL_ROOT_PASSWORD=PASSWORD -e MYSQL_DATABASE=DATABASENAME mysql:8.0.34 /
+## Replace CONTAINERNAME, PASSWORD, and DATABASENAME with your desired values.
 
 #### Step 4: Create Docker Network
 docker network create springssonet
