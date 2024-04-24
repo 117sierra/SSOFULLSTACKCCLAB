@@ -22,7 +22,7 @@ mvn install # Maven build command to create spring.jar file
 
 ## Step 7: Build Docker Image for Spring Boot Application
 docker build -t IMAGENAME . # Build Docker image for Spring Boot app
-Replace IMAGENAME with ur choice.
+#### Replace IMAGENAME with ur choice.
 
 ## Step 8: Run Docker Containers
 docker run -p 7000:8080 --name IMAGENAME --net springssonet -e MYSQL_HOST=MYSQLContainername -e MYSQL_USER=USERNAME -e MYSQL_PASSWORD=PASSWORD -e MYSQL_PORT=3306 springsso
